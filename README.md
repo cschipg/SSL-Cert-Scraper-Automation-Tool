@@ -1,5 +1,8 @@
 # SSL-Cert-Scraper-Automation-Tool
 
+#### TLDR: Python script that fetched all DNS records from my employer's Cloudflare domains and running nmap scans on open ports within the respective ip addresses to retrieve x509 SSL Certs, serialize it as JSON, and package pertinent info for Prometheus export. Then setting up a FastAPI server exposing an endpoint to populate as HTML the Prometheus-ready data.
+
+
 ### Recent Changes:
 - **FastAPI Server Implementation:** Added FastAPI server code to handle requests efficiently.
 - **Docker Integration:** Created a Dockerfile to build an Alpine-based Docker image for our application, ensuring a lightweight and secure deployment.
